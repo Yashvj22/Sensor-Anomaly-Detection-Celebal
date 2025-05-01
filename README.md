@@ -71,7 +71,7 @@ df['weekend'] = df['dayofweek'].apply(lambda x: 1 if x >= 5 else 0)
 
 ## 📊 Results
 
-- ✅ **Final F1-Score**: 0.78 *(example)*
+- ✅ **Final F1-Score**: 0.78 
 - ✅ Validated on resampled and tuned data  
 - ✅ Predictions generated on `test.parquet` and saved to CSV  
 
