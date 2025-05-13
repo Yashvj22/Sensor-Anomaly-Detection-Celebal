@@ -54,15 +54,15 @@ df['weekend'] = df['dayofweek'].apply(lambda x: 1 if x >= 5 else 0)
 
 ## ⚙️ Model Pipeline
 
-### 🔄 Preprocessing
+### Preprocessing
 - Extracted features from datetime columns  
 - Dropped unnecessary columns (e.g., `Date`)  
 - Applied `RobustScaler` for feature scaling  
 
-### 🧬 Resampling
+### Resampling
 - Used **SMOTE** to address class imbalance in the dataset  
 
-### 🧠 Model Training
+### Model Training
 - Trained an `XGBClassifier`  
 - Optimized hyperparameters using **Optuna**  
 - Evaluated using **F1-Score** with 3-fold cross-validation  
